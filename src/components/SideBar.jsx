@@ -19,9 +19,9 @@ const SideBar = ({
           let cssClasses = "text-xl w-full text-left px-4 py-2 rounded-sm my-1 hover:text-stone-200 hover:bg-stone-800 hover:border-l-4";
 
           if (projects.id === selectedProjectId) {
-            cssClasses += "bg-stone-800 text-stone-200"
+              cssClasses += " bg-stone-800 text-stone-200 border-l-4 border-stone-200 ";
           } else {
-            cssClasses += " text-stone-400 "
+            cssClasses += " text-stone-400"
           }
 
           return (
