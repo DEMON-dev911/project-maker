@@ -13,10 +13,10 @@ const Tasks = ({ tasks, onAdd, onDelete }) => {
       {tasks.length > 0 && (
         <ul className="p-4 mt-8 rounded-md bg-stone-100">
           {tasks.map((task) => (
-            <li key={task.id} className="flex justify-between my-4">
+            <li key={task.id} className="flex justify-between my-4 border-b-2 border-stone-300">
               <span>{task.text}</span>
               <button
-                className="text-stone-700 hover: text-red-500"
+                className="text-stone-700 hover:text-red-500 *:hover:bg-transparent"
                 onClick={() => onDelete(task.id)}
               >
                 Clear

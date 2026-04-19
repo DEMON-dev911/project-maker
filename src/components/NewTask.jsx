@@ -24,7 +24,7 @@ const NewTask = ({ onAdd }) => {
         value={enteredTask}
       />
       <button
-        className="text-stone-700 hover:text-stone-950"
+        className="text-stone-700 bg-stone-200 px-2 py-1 rounded-md hover:bg-stone-400 hover:text-stone-950"
         onClick={handleClick}
       >
         Add Task
